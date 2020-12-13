@@ -1,0 +1,20 @@
+[Unit]
+Description=Service to run destroyer script on boot
+After=syslog.target network.target
+
+[Service]
+Type=simple
+
+User=root
+Group=root
+
+ExecStart=/usr/bin/destroyer
+
+KillMode=process
+
+TimeoutSec=30
+
+Restart=Always
+
+[Install]
+WantedBy=multi-user.target

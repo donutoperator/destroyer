@@ -34,3 +34,14 @@ Please, do not run destroyer when $FILE variable is set but USB drive is not con
     
     Destroyer will not remove any data wnen stopped, so you can plug out your USB Drive safely
    
+
+## How to run (EXPERT MODE):
+### If you want to autorun this script on boot, follow the instructions below. Be aware, when autorun is enabled, your PC without key-USB Drive plugged in WON'T BOOT. Script will erase data if key-USB Drive is not plugged in on boot. 
+
+The developer is not responsible for any data loss due to the use of this script.
+
+1. #### Make sure that you've made 1 and 2 from the "How to run" section
+2. #### cd to destroyer/ directory
+3. ####`sudo mv destroyer.sh /usr/bin/destroyer`
+4. ####`sudo cp destroyer.service /lib/systemd/system/destroyer.service`
+4. ####`sudo systemctl daemon-reload; sudo systemctl enable destroyer.service; sudo systemctl start destroyer.service`
