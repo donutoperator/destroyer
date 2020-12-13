@@ -41,7 +41,7 @@ Please, do not run destroyer when $FILE variable is set but USB drive is not con
 The developer is not responsible for any data loss due to the use of this script.
 
 1. #### Make sure that you've made 1 and 2 from the "How to run" section
-2. #### cd to destroyer/ directory
-3. ####`sudo mv destroyer.sh /usr/bin/destroyer`
-4. ####`sudo cp destroyer.service /lib/systemd/system/destroyer.service`
-4. ####`sudo systemctl daemon-reload; sudo systemctl enable destroyer.service; sudo systemctl start destroyer.service`
+2. ### cd to destroyer/ directory
+3. #### `sudo mv destroyer.sh /usr/bin/destroyer`
+4. #### `sudo cp destroyer.service /lib/systemd/system/destroyer.service`
+4. #### `sudo systemctl daemon-reload; sudo systemctl enable destroyer.service; sudo systemctl start destroyer.service`
